@@ -8,10 +8,12 @@ A JavaScript program can be composed of −
 Words that have a special meaning in the context of a language.
 ## Variables
 Represents a named memory block that can store values for the program.
-let – declare block-scoped variables using the let keyword.
-let vs. var – understand the differences between let and var.
-const – define constants using the const keyword.
-Concept of Hoisting 
+- let :declare block-scoped variables using the let keyword.
+- let vs. var – understand the differences between let and var.
+- const : define constants using the const keyword.
+
+**Concept of Hoisting** 
+
 The JavaScript engine, by default, moves declarations to the top. This feature is termed as hoisting. This feature applies to variables and functions. Hoisting allows JavaScript to use a component before it has been declared. However, the concept of hoisting does not apply to scripts that are run in the Strict Mode.
 ## Literals
 Represents constant/fixed values.
@@ -111,6 +113,7 @@ The exponentiation assignment operator (**=) raises the value of a variable to t
 
 ## Shift operator << >> >>>
 The right shift (>>) operator shifts the first operand the specified number of bits, modulo 32, to the right. Excess bits shifted off to the right are discarded, and copies of the leftmost bit are shifted in from the left.
+
 The left shift (<<) operator shifts the first operand the specified number of bits, modulo 32, to the left. Excess bits shifted off to the left are discarded. Zero bits are shifted in from the right.
 
 # Fundamental objects
@@ -164,11 +167,14 @@ Symbols cannot be typecasted to primitive data types.
 # Numbers, dates, and mathematical calculations
 ## Number
 Number object enables you to represent a numeric value. It may be integer or floating-point. Numbers are always stored as double precision floating point numbers.
+
+```
 let x = 3.14;    // A number with decimals
 let y = 3;       // A number without decimals
+```
+
 The maximum number of decimals is 17.
-Floating point arithmetic is not always 100% accurate:
-let x = 0.2 + 0.1;
+Floating point arithmetic is not always 100% accurate: ```let x = 0.2 + 0.1;```
 
 ## Date
 The JavaScript date object can be used to get year, month and day.
