@@ -6,6 +6,17 @@ JavaScript was developed by Brendan Eich, a developer at Netscape Communications
 A JavaScript program can be composed of −
 ## Keywords
 Words that have a special meaning in the context of a language.
+
+|break|as|any|switch|
+| - | - | - | - |
+|case|if|throw|else|
+|var|number|string|get |
+|module|type|instanceof|Typeof|
+|finally|for|enum|Export|
+|while|void|this|New|
+|null|super|Catch|let|
+|static|return|True|False|
+
 ## Variables
 Represents a named memory block that can store values for the program.
 - let :declare block-scoped variables using the let keyword.
@@ -135,10 +146,39 @@ const person = {
 ```
 this is not a variable. It is a keyword. You cannot change the value of this. In a function definition, this refers to the "owner" of the function.
 You access an object method with the following syntax:	`` objectName.methodName() ``
+|**S.No**|**Methods**|**Description**|
+| :- | :- | :- |
+|1|[Object.assign()](https://www.javatpoint.com/javascript-object-assign-method)|This method is used to copy enumerable and own properties from a source object to a target object. Objects are assigned and copied by reference|
+|2|[Object.create()](https://www.javatpoint.com/javascript-object-create-method)|This method is used to create a new object with the specified prototype object and properties.|
+|3|[Object.defineProperty()](https://www.javatpoint.com/javascript-object-defineproperty-method)|This method is used to describe some behavioral attributes of the property.|
+|4|[Object.defineProperties()](https://www.javatpoint.com/javascript-object-defineproperties-method)|This method is used to create or configure multiple object properties.|
+|5|[Object.entries()](https://www.javatpoint.com/javascript-object-entries-method)|This method returns an array with arrays of the key, value pairs.|
+|6|[Object.freeze()](https://www.javatpoint.com/javascript-object-freeze-method)|This method prevents the modification of existing property, attributes, and values.|
+|7|[Object.getOwnPropertyDescriptor()](https://www.javatpoint.com/javascript-object-getownpropertydescriptor-method)|This method returns a property descriptor for the specified property of the specified object.|
+|8|[Object.getOwnPropertyDescriptors()](https://www.javatpoint.com/javascript-object-getownpropertydescriptors-method)|This method returns all own property descriptors of a given object.|
+|9|[Object.getOwnPropertyNames()](https://www.javatpoint.com/javascript-object-getownpropertynames-method)|This method returns an array of all properties (enumerable or not) found.|
+|10|[Object.getOwnPropertySymbols()](https://www.javatpoint.com/javascript-object-getownpropertysymbols-method)|This method returns an array of all own symbol key properties.|
+|11|[Object.getPrototypeOf()](https://www.javatpoint.com/javascript-object-getprototypeof-method)|This method returns the prototype of the specified object.|
+|12|[Object.is()](https://www.javatpoint.com/javascript-object-is-method)|This method determines whether two values are the same value.|
+|13|[Object.isExtensible()](https://www.javatpoint.com/javascript-objects)|This method determines if an object is extensible|
+|14|[Object.isFrozen()](https://www.javatpoint.com/javascript-objects)|This method determines if an object was frozen.|
+|15|[Object.isSealed()](https://www.javatpoint.com/javascript-objects)|This method determines if an object is sealed.|
+|16|[Object.keys()](https://www.javatpoint.com/javascript-objects)|This method returns an array of a given object's own property names.|
+|17|[Object.preventExtensions()](https://www.javatpoint.com/javascript-object-preventextensions-method)|This method is used to prevent any extensions of an object.|
+|18|[Object.seal()](https://www.javatpoint.com/javascript-object-seal-method)|This method prevents new properties from being added and marks all existing properties as non-configurable. The object to be sealed is passed as an argument, and the method returns the object which has been sealed.|
+|19|[Object.setPrototypeOf()](https://www.javatpoint.com/javascript-object-setprototypeof-method)|This method sets the prototype of a specified object to another object.|
+|20|[Object.values()](https://www.javatpoint.com/javascript-object-values-method)|This method returns an array of values.|
+
+
 
 ## Boolean
 JavaScript Boolean is an object that represents value in two states: true or false.
 ` let b=new Boolean(value);  `
+|**Method**|**Description**|
+| :- | :- |
+|toSource()|returns the source of Boolean object as a string.|
+|toString()|converts Boolean into String.|
+|valueOf()|converts other type into Boolean.|
 
 ## Functions
 A JavaScript function is a block of code designed to perform a particular task.
@@ -163,6 +203,21 @@ A Symbol() method always return a unique value.
 A symbol value may be used as an identifier for object properties.
 Symbols are immutable, just like numbers or strings.
 Symbols cannot be typecasted to primitive data types.
+|**Methods**|**Description**|
+| :- | :- |
+|[Symbol.hasInstance](https://www.javatpoint.com/javascript-symbol-hasinstance-property)|It is used to determine if a constructor object recognizes an object as its instance.|
+|[Symbol.isConcatSpreadable](https://www.javatpoint.com/javascript-symbol-isconcatspreadable-property)|It is used to configure if an object should be flattened to its array elements.|
+|[Symbol.match](https://www.javatpoint.com/javascript-symbol-match-property)|It is a method to identify the matching of a regular expression against a string.|
+|[Symbol.prototype](https://www.javatpoint.com/javascript-symbol-prototype-property)|It is used for produce the prototype for the symbol constructor.|
+|[Symbol.replace](https://www.javatpoint.com/javascript-symbol-replace-property)|It replace matched substring of a string.|
+|[Symbol.search](https://www.javatpoint.com/javascript-symbol-search-property)|It returns the index within a string that matches with the regular expression.|
+|[Symbol.split](https://www.javatpoint.com/javascript-symbol-split-property)|It splits a string at the indices that match the regular expression.|
+|Symbol.toPrimitive|It is used to convert an object to its equivalent primitive value.|
+|[Symbol.unscopables](https://www.javatpoint.com/javascript-symbol-unscopables-property)|It is a well-known object property whose property name are excluded from with environment.|
+|[Symbol.for()](https://www.javatpoint.com/javascript-symbol-for-method)|It is used to search for existing symbol in a runtime-wide symbol registry with the provided key and returns if it is found. Otherwise new symbol gets created with this key.|
+|[Symbol.keyFor()](https://www.javatpoint.com/javascript-symbol-keyfor-method)|It uses the global symbol registry to look up the key for the symbol. So it doesn't work for non-global symbols. If the symbol is not global, it won't be able to find it and returns undefined.|
+|[Symbol.toString()](https://www.javatpoint.com/javascript-symbol-tostring-method)|It is used to return a string representation of an object.|
+
 
 # Numbers, dates, and mathematical calculations
 ## Number
@@ -176,16 +231,107 @@ let y = 3;       // A number without decimals
 The maximum number of decimals is 17.
 Floating point arithmetic is not always 100% accurate: ```let x = 0.2 + 0.1;```
 
+|toString()|Returns a number as a string|
+| :- | :- |
+|toExponetial()|Returns a number written in exponential notation|
+|toFixed()|Returns a number written with a number of decimals|
+|toPrecision()|Returns a number written with a specified length|
+|ValueOf()|Returns a number as a number|
+|Number()|Returns a number converted from its argument.|
+|parseFloat()|Parses its argument and returns a floating point number|
+|parseInt()|Parses its argument and returns a whole number|
+|Number.isInteger()|Returns true if the argument is an integer|
+|Number.isSafeInteger()|Returns true if the argument is a safe integer|
+|Number.parseFloat()|Converts a string to a number|
+|Number.parseInt()|Converts a string to a whole number|
+|[prototype](https://www.w3schools.com/jsref/jsref_prototype_num.asp)|Allows you to add properties and methods to an object|
+|EPSILON|The difference between 1 and the smallest JS number.|
+|MAX\_VALUE|The largest number possible in JavaScript|
+|MIN\_VALUE|The smallest number possible in JavaScript|
+|MAX\_SAFE\_INTEGER|The maximum safe integer (253 - 1)|
+|MAX\_SAFE\_INTEGER|The minimum safe integer -(253 - 1)|
+|POSITIVE\_INFINITY|Infinity (returned on overflow)|
+|NEGATIVE\_INFINITY|Negative infinity (returned on overflow)|
+|NaN|A "Not-a-Number" value|
+
 ## Date
 The JavaScript date object can be used to get year, month and day.
 You can use 4 variant of Date constructor to create date object.
-1.	Date()
-2.	Date(milliseconds)
-3.	Date(dateString)
-4.	Date(year, month, day, hours, minutes, seconds, milliseconds)
+ - Date()
+ - Date(milliseconds)
+ - Date(dateString)
+ - Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+|**Methods**|**Description**|
+| :- | :- |
+|[getDate()](https://www.javatpoint.com/javascript-date-getdate-method)|It returns the integer value between 1 and 31 that represents the day for the specified date on the basis of local time.|
+|[getDay()](https://www.javatpoint.com/javascript-date-getday-method)|It returns the integer value between 0 and 6 that represents the day of the week on the basis of local time.|
+|[getFullYears()](https://www.javatpoint.com/javascript-date-getutcfullyear-method)|It returns the integer value that represents the year on the basis of local time.|
+|[getHours()](https://www.javatpoint.com/javascript-date-gethours-method)|It returns the integer value between 0 and 23 that represents the hours on the basis of local time.|
+|[getMilliseconds()](https://www.javatpoint.com/javascript-date-getmilliseconds-method)|It returns the integer value between 0 and 999 that represents the milliseconds on the basis of local time.|
+|[getMinutes()](https://www.javatpoint.com/javascript-date-getminutes-method)|It returns the integer value between 0 and 59 that represents the minutes on the basis of local time.|
+|[getMonth()](https://www.javatpoint.com/javascript-date-getmonth-method)|It returns the integer value between 0 and 11 that represents the month on the basis of local time.|
+|[getSeconds()](https://www.javatpoint.com/javascript-date-getseconds-method)|It returns the integer value between 0 and 60 that represents the seconds on the basis of local time.|
+|[getUTCDate()](https://www.javatpoint.com/javascript-date-getutcdate-method)|It returns the integer value between 1 and 31 that represents the day for the specified date on the basis of universal time.|
+|[getUTCDay()](https://www.javatpoint.com/javascript-date-getutcday-method)|It returns the integer value between 0 and 6 that represents the day of the week on the basis of universal time.|
+|[getUTCFullYears()](https://www.javatpoint.com/javascript-date-getutcfullyears-method)|It returns the integer value that represents the year on the basis of universal time.|
+|[getUTCHours()](https://www.javatpoint.com/javascript-date-getutchours-method)|It returns the integer value between 0 and 23 that represents the hours on the basis of universal time.|
+|[getUTCMinutes()](https://www.javatpoint.com/javascript-date-getutcminutes-method)|It returns the integer value between 0 and 59 that represents the minutes on the basis of universal time.|
+|[getUTCMonth()](https://www.javatpoint.com/javascript-date-getutcmonth-method)|It returns the integer value between 0 and 11 that represents the month on the basis of universal time.|
+|[getUTCSeconds()](https://www.javatpoint.com/javascript-date-getutcseconds-method)|It returns the integer value between 0 and 60 that represents the seconds on the basis of universal time.|
+|setDate()|It sets the day value for the specified date on the basis of local time.|
+|setDay()|It sets the particular day of the week on the basis of local time.|
+|setFullYears()|It sets the year value for the specified date on the basis of local time.|
+|[setHours()](https://www.javatpoint.com/javascript-date-sethours-method)|It sets the hour value for the specified date on the basis of local time.|
+|[setMilliseconds()](https://www.javatpoint.com/javascript-date-setmilliseconds-method)|It sets the millisecond value for the specified date on the basis of local time.|
+|[setMinutes()](https://www.javatpoint.com/javascript-date-setminutes-method)|It sets the minute value for the specified date on the basis of local time.|
+|setMonth()|It sets the month value for the specified date on the basis of local time.|
+|[setSeconds()](https://www.javatpoint.com/javascript-date-setseconds-method)|It sets the second value for the specified date on the basis of local time.|
+|[setUTCDate()](https://www.javatpoint.com/javascript-date-setutcdate-method)|It sets the day value for the specified date on the basis of universal time.|
+|setUTCDay()|It sets the particular day of the week on the basis of universal time.|
+|[setUTCFullYears()](https://www.javatpoint.com/javascript-date-setutcfullyear-method)|It sets the year value for the specified date on the basis of universal time.|
+|[setUTCHours()](https://www.javatpoint.com/javascript-date-setutchours-method)|It sets the hour value for the specified date on the basis of universal time.|
+|setUTCMilliseconds()|It sets the millisecond value for the specified date on the basis of universal time.|
+|[setUTCMinutes()](https://www.javatpoint.com/javascript-date-setutcminutes-method)|It sets the minute value for the specified date on the basis of universal time.|
+|[setUTCMonth()](https://www.javatpoint.com/javascript-date-setutcmonth-method)|It sets the month value for the specified date on the basis of universal time.|
+|[setUTCSeconds()](https://www.javatpoint.com/javascript-date-setutcseconds-method)|It sets the second value for the specified date on the basis of universal time.|
+|[toDateString()](https://www.javatpoint.com/javascript-date-todatestring-method)|It returns the date portion of a Date object.|
+|[toISOString()](https://www.javatpoint.com/javascript-date-toisostring-method)|It returns the date in the form ISO format string.|
+|[toJSON()](https://www.javatpoint.com/javascript-date-tojson-method)|It returns a string representing the Date object. It also serializes the Date object during JSON serialization.|
+|[toString()](https://www.javatpoint.com/javascript-date-tostring-method)|It returns the date in the form of string.|
+|[toTimeString()](https://www.javatpoint.com/javascript-date-totimestring-method)|It returns the time portion of a Date object.|
+|[toUTCString()](https://www.javatpoint.com/javascript-date-toutcstring-method)|It converts the specified date in the form of string using UTC time zone.|
+|[valueOf()](https://www.javatpoint.com/javascript-date-valueof-method)|It returns the primitive value of a Date object.|
 
 ## Math
 The JavaScript math object provides several constants and methods to perform mathematical operation. It doesn't have constructors.
+
+|**Methods**|**Description**|
+| :- | :- |
+|[abs()](https://www.javatpoint.com/javascript-math-abs-method)|It returns the absolute value of the given number.|
+|[acos()](https://www.javatpoint.com/javascript-math-acos-method)|It returns the arccosine of the given number in radians.|
+|[asin()](https://www.javatpoint.com/javascript-math-asin-method)|It returns the arcsine of the given number in radians.|
+|[atan()](https://www.javatpoint.com/javascript-math-atan-method)|It returns the arc-tangent of the given number in radians.|
+|[cbrt()](https://www.javatpoint.com/javascript-math-cbrt-method)|It returns the cube root of the given number.|
+|[ceil()](https://www.javatpoint.com/javascript-math-ceil-method)|It returns a smallest integer value, greater than or equal to the given number.|
+|[cos()](https://www.javatpoint.com/javascript-math-cos-method)|It returns the cosine of the given number.|
+|[cosh()](https://www.javatpoint.com/javascript-math-cosh-method)|It returns the hyperbolic cosine of the given number.|
+|[exp()](https://www.javatpoint.com/javascript-math-exp-method)|It returns the exponential form of the given number.|
+|[floor()](https://www.javatpoint.com/javascript-math-floor-method)|It returns largest integer value, lower than or equal to the given number.|
+|[hypot()](https://www.javatpoint.com/javascript-math-hypot-method)|It returns square root of sum of the squares of given numbers.|
+|[log()](https://www.javatpoint.com/javascript-math-log-method)|It returns natural logarithm of a number.|
+|[max()](https://www.javatpoint.com/javascript-math-max-method)|It returns maximum value of the given numbers.|
+|[min()](https://www.javatpoint.com/javascript-math-min-method)|It returns minimum value of the given numbers.|
+|[pow()](https://www.javatpoint.com/javascript-math-pow-method)|It returns value of base to the power of exponent.|
+|[random()](https://www.javatpoint.com/javascript-math-random-method)|It returns random number between 0 (inclusive) and 1 (exclusive).|
+|[round()](https://www.javatpoint.com/javascript-math-round-method)|It returns closest integer value of the given number.|
+|[sign()](https://www.javatpoint.com/javascript-math-sign-method)|It returns the sign of the given number|
+|[sin()](https://www.javatpoint.com/javascript-math-sin-method)|It returns the sine of the given number.|
+|[sinh()](https://www.javatpoint.com/javascript-math-sinh-method)|It returns the hyperbolic sine of the given number.|
+|[sqrt()](https://www.javatpoint.com/javascript-math-sqrt-method)|It returns the square root of the given number|
+|[tan()](https://www.javatpoint.com/javascript-math-tan-method)|It returns the tangent of the given number.|
+|[tanh()](https://www.javatpoint.com/javascript-math-tanh-method)|It returns the hyperbolic tangent of the given number.|
+|[trunc()](https://www.javatpoint.com/javascript-math-trunc-method)|It returns an integer part of the given number.|
 
 # Text processing
 These objects represent strings and support manipulating them.
@@ -203,6 +349,29 @@ let answer1 = "It's alright";
 let answer2 = "He is called 'Johnny'";
 let answer3 = 'He is called "Johnny"';
 ```
+
+|**Methods**|**Description**|
+| :- | :- |
+|[charAt()](https://www.javatpoint.com/javascript-string-charat-method)|It provides the char value present at the specified index.|
+|[charCodeAt()](https://www.javatpoint.com/javascript-string-charcodeat-method)|It provides the Unicode value of a character present at the specified index.|
+|[concat()](https://www.javatpoint.com/javascript-string-concat-method)|It provides a combination of two or more strings.|
+|[indexOf()](https://www.javatpoint.com/javascript-string-indexof-method)|It provides the position of a char value present in the given string.|
+|[lastIndexOf()](https://www.javatpoint.com/javascript-string-lastindexof-method)|It provides the position of a char value present in the given string by searching a character from the last position.|
+|[search()](https://www.javatpoint.com/javascript-string-search-method)|It searches a specified regular expression in a given string and returns its position if a match occurs.|
+|[match()](https://www.javatpoint.com/javascript-string-match-method)|It searches a specified regular expression in a given string and returns that regular expression if a match occurs.|
+|[replace()](https://www.javatpoint.com/javascript-string-replace-method)|It replaces a given string with the specified replacement.|
+|[substr()](https://www.javatpoint.com/javascript-string-substr-method)|It is used to fetch the part of the given string on the basis of the specified starting position and length.|
+|[substring()](https://www.javatpoint.com/javascript-string-substring-method)|It is used to fetch the part of the given string on the basis of the specified index.|
+|[slice()](https://www.javatpoint.com/javascript-string-slice-method)|It is used to fetch the part of the given string. It allows us to assign positive as well negative index.|
+|[toLowerCase()](https://www.javatpoint.com/javascript-string-tolowercase-method)|It converts the given string into lowercase letter.|
+|[toLocaleLowerCase()](https://www.javatpoint.com/javascript-string-tolocalelowercase-method)|It converts the given string into lowercase letter on the basis of host?s current locale.|
+|[toUpperCase()](https://www.javatpoint.com/javascript-string-touppercase-method)|It converts the given string into uppercase letter.|
+|[toLocaleUpperCase()](https://www.javatpoint.com/javascript-string-tolocaleuppercase-method)|It converts the given string into uppercase letter on the basis of host?s current locale.|
+|[toString()](https://www.javatpoint.com/javascript-string-tostring-method)|It provides a string representing the particular object.|
+|[valueOf()](https://www.javatpoint.com/javascript-string-valueof-method)|It provides the primitive value of string object.|
+|split()|It splits a string into substring array, then returns that newly created array.|
+|trim()|It trims the white space from the left and right side of the string.|
+
 
 ## RegExp
 The RegExp object is used for matching text with a pattern.
@@ -233,7 +402,42 @@ There are 2 ways to construct array in JavaScript
 - By using new keyword
 `var arrayname=new Array(); `
 
-Array Objects
+|**Methods**|**Description**|
+| :- | :- |
+|[concat()](https://www.javatpoint.com/javascript-array-concat-method)|It returns a new array object that contains two or more merged arrays.|
+|[copywithin()](https://www.javatpoint.com/javascript-array-copywithin-method)|It copies the part of the given array with its own elements and returns the modified array.|
+|[entries()](https://www.javatpoint.com/javascript-array-entries-method)|It creates an iterator object and a loop that iterates over each key/value pair.|
+|[every()](https://www.javatpoint.com/javascript-array-every-method)|It determines whether all the elements of an array are satisfying the provided function conditions.|
+|[flat()](https://www.javatpoint.com/javascript-array-flat-method)|It creates a new array carrying sub-array elements concatenated recursively till the specified depth.|
+|[flatMap()](https://www.javatpoint.com/javascript-array-flatmap-method)|It maps all array elements via mapping function, then flattens the result into a new array.|
+|[fill()](https://www.javatpoint.com/javascript-array-fill-method)|It fills elements into an array with static values.|
+|[from()](https://www.javatpoint.com/javascript-array-from-method)|It creates a new array carrying the exact copy of another array element.|
+|[filter()](https://www.javatpoint.com/javascript-array-filter-method)|It returns the new array containing the elements that pass the provided function conditions.|
+|[find()](https://www.javatpoint.com/javascript-array-find-method)|It returns the value of the first element in the given array that satisfies the specified condition.|
+|[findIndex()](https://www.javatpoint.com/javascript-array-findindex-method)|It returns the index value of the first element in the given array that satisfies the specified condition.|
+|[forEach()](https://www.javatpoint.com/javascript-array-foreach-method)|It invokes the provided function once for each element of an array.|
+|[includes()](https://www.javatpoint.com/javascript-array-includes-method)|It checks whether the given array contains the specified element.|
+|[indexOf()](https://www.javatpoint.com/javascript-array-indexof-method)|It searches the specified element in the given array and returns the index of the first match.|
+|[isArray()](https://www.javatpoint.com/javascript-array-isarray-method)|It tests if the passed value ia an array.|
+|[join()](https://www.javatpoint.com/javascript-array-join-method)|It joins the elements of an array as a string.|
+|[keys()](https://www.javatpoint.com/javascript-array-keys-method)|It creates an iterator object that contains only the keys of the array, then loops through these keys.|
+|[lastIndexOf()](https://www.javatpoint.com/javascript-array-lastindexof-method)|It searches the specified element in the given array and returns the index of the last match.|
+|[map()](https://www.javatpoint.com/javascript-array-map-method)|It calls the specified function for every array element and returns the new array|
+|[of()](https://www.javatpoint.com/javascript-array-of-method)|It creates a new array from a variable number of arguments, holding any type of argument.|
+|[pop()](https://www.javatpoint.com/javascript-array-pop-method)|It removes and returns the last element of an array.|
+|[push()](https://www.javatpoint.com/javascript-array-push-method)|It adds one or more elements to the end of an array.|
+|[reverse()](https://www.javatpoint.com/javascript-array-reverse-method)|It reverses the elements of given array.|
+|[reduce(function, initial)](https://www.javatpoint.com/javascript-array-reduce-method)|It executes a provided function for each value from left to right and reduces the array to a single value.|
+|[reduceRight()](https://www.javatpoint.com/javascript-array-reduceright-method)|It executes a provided function for each value from right to left and reduces the array to a single value.|
+|[some()](https://www.javatpoint.com/javascript-array-some-method)|It determines if any element of the array passes the test of the implemented function.|
+|[shift()](https://www.javatpoint.com/javascript-array-shift-method)|It removes and returns the first element of an array.|
+|[slice()](https://www.javatpoint.com/javascript-array-slice-method)|It returns a new array containing the copy of the part of the given array.|
+|[sort()](https://www.javatpoint.com/javascript-array-sort-method)|It returns the element of the given array in a sorted order.|
+|[splice()](https://www.javatpoint.com/javascript-array-splice-method)|It add/remove elements to/from the given array.|
+|[toLocaleString()](https://www.javatpoint.com/javascript-array-tolocalestring-method)|It returns a string containing all the elements of a specified array.|
+|[toString()](https://www.javatpoint.com/javascript-array-tostring-method)|It converts the elements of a specified array into string form, without affecting the original array.|
+|[unshift()](https://www.javatpoint.com/javascript-array-unshift-method)|It adds one or more elements in the beginning of the given array.|
+|[values()](https://www.javatpoint.com/javascript-array-values-method)|It creates a new iterator object carrying values for each index in the array.|
 
 # Loops
 loops through a block of code a number of times
