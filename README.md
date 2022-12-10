@@ -179,6 +179,39 @@ JavaScript Boolean is an object that represents value in two states: true or fal
 |toSource()|returns the source of Boolean object as a string.|
 |toString()|converts Boolean into String.|
 |valueOf()|converts other type into Boolean.|
+Excersies
+
+```javascript
+const good = Boolean(expression);    // use this
+const good2 = !!(expression);        // or this
+const bad = new Boolean(expression); // don't use this!
+
+const a = new Boolean(false);
+console.log(Boolean(a), Boolean(undefined), Boolean(null), Boolean(0), Boolean(NaN), Boolean(new Object()));
+
+if(a)	console.log("TRUE");
+else	console.log("FALSE");
+
+if([]){
+	console.log("[] is TRUE");
+	if([]==false)
+		console.log("[]==false is TRUE");
+		if(36==false)
+		console.log("[]==false is TRUE");
+}
+
+const bNoParam = new Boolean(); //false
+const bZero = new Boolean(0); //false
+const bNull = new Boolean(null); //false
+const bEmptyString = new Boolean(''); //false
+const bfalse = new Boolean(false); //false
+const btrue = new Boolean(true); //true
+const btrueString = new Boolean('true'); //true
+const bfalseString = new Boolean('false'); //true
+const bSuLin = new Boolean('Su Lin'); //true
+const bArrayProto = new Boolean([]); //true
+const bObjProto = new Boolean({}); //true
+```
 
 ## Functions
 A JavaScript function is a block of code designed to perform a particular task.
@@ -196,6 +229,16 @@ Automatically (self invoked)
 
 Every JavaScript function is actually a Function object. This can be seen with below code, which returns true.
 `(function () {}).constructor === Function`
+
+|**Methods**|**Description**|
+| :- | :- |
+Function.prototype.length| Specifies the number of arguments expected by the function.|
+Function.prototype.name | The name of the function.|
+Function.prototype.prototype | Used when the function is used as a constructor with the new operator. It will become the new object's prototype. |
+Function.prototype.apply() | Calls a function with a given this value and optional arguments provided as an array (or an array-like object).|
+Function.prototype.bind() | Creates a new function that, when called, has its this keyword set to a provided value, optionally with a given sequence of arguments preceding any provided when the new function is called.|
+Function.prototype.call() | Calls a function with a given this value and optional arguments.|
+Function.prototype.toString() | Returns a string representing the source code of the function. Overrides the Object.prototype.toString method.|
 
 ## Symbol
 The JavaScript Symbol is a function that is used to identify the object properties. Symbols are often used to add unique property keys to an object
