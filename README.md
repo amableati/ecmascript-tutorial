@@ -274,6 +274,13 @@ let y = 3;       // A number without decimals
 The maximum number of decimals is 17.
 Floating point arithmetic is not always 100% accurate: ```let x = 0.2 + 0.1;```
 
+Comparission of common Number properties
+|MAX_SAFE_INTEGER|MAX_VALUE|MIN_SAFE_INTEGER|MIN_VALUE|EPSILON|
+| :- | :- |:- | :- |:- |
+|2<sup>53</sup>– 1|2<sup>1024</sup>- 1|-(2<sup>53</sup>- 1)|2<sup>-1074</sup>|2<sup>-52</sup>|
+|9007199254740991|1.7976931348623157E<sup>308</sup>|-9007199254740991|5E<sup>-324</sup>|2.2204460492503130808472633361816E<sup>-16</sup>|
+
+Methods & Properties of Number
 |toString()|Returns a number as a string|
 | :- | :- |
 |toExponetial()|Returns a number written in exponential notation|
