@@ -1,3 +1,6 @@
+/*
+*/
+
 console.log("Session 2");
 
 console.log("Ternary Operator ? :");

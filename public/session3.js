@@ -110,7 +110,7 @@ console.log(male());
 console.log(people.getAge.toString());
 
 
-//Symbole
+//Symbol
 const sym = Symbol();
 console.log(typeof sym, typeof functionName1, typeof people, typeof b3);
 
