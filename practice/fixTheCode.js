@@ -10,7 +10,10 @@ Notes
 READ EVERY WORD CAREFULLY, CHARACTER BY CHARACTER!
 Don't overthink this challenge; it's not supposed to be hard.
 */
+console.log(squared(5));
+console.log(squared(9));
+console.log(squared(100));
 
-function squaed(b) {
-	return a * a
+function squared(b) {
+	return a * a;
 }

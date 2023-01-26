@@ -10,6 +10,12 @@ Notes
 The bug can be hard to find, so look closely!
 */
 
+console.log(isSeven(4));
+console.log(isSeven(9));
+console.log(isSeven(7));
+console.log(isSeven(0));
+
 function isSeven(x) {
-	return x="7"?false:true:false;
+	//return x="7"?false:true:false;
+	return x=="7"?true:false;
 }

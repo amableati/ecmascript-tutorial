@@ -18,7 +18,12 @@ checkEquality(1,  1) ➞ true			// A number and a number: the type and value are
 Notes
 If you get stuck on a challenge, find help in the Resources tab.
 If you're really stuck, unlock solutions in the Solutions tab.*/
+console.log(checkEquality(1, true));
+console.log(checkEquality(0, "0"));
+console.log(checkEquality(1,  1));
+
 
 function checkEquality(a, b) {
-  
+  if(a === b) return true;
+  else return false;
 }

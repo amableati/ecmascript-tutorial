@@ -11,3 +11,36 @@ function integerWithInFinite(x, y) {
     return x*y;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function integerWithInFinite(x, y) {
+  if (Number.isFinite(x*y)) {
+    return x*y;
+  }
+  return 'Not a finite number';
+}
+*/
