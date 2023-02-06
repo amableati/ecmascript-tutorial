@@ -15,7 +15,7 @@ console.log(Date());//returns a string representation of the current date and ti
 console.log(new Date(12123));//returns a new Date object.
 console.log(Date.parse("01/01/2023"), "\n");
 
-console.log(new Date(121239999999), new Date(), new Date(-19800000 ), new Date(0));
+console.log(new Date(121239999999),"-", new Date(),"-", new Date(-19800000 ),"-", new Date(0));
 
 console.log(Date.parse("Aug 9, 1995"), "\n");//Returns 807937200000 in time zone GMT-0300, and other values in other time zones
 
