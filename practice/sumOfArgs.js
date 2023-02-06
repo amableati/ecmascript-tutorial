@@ -14,11 +14,11 @@ Don't forget to return the result.
 function sumOfArgs(a, b, ...c) {
 	let result=a+b, start=0;
 	while(start < c.length){
-		result += +c[start];
+		result += +c[start];//result = result + Integer.parse(c[start])
 		start+=1;
 	}
 	return result;
 }
 
-console.log(sumOfArgs(7, 3, 3, 1, 10, 4, 5));
+console.log(sumOfArgs(7, 3, 2, 1, 10, 4, 5));
 
